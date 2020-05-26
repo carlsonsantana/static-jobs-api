@@ -17,10 +17,12 @@ jobs:
         npm start
         mkdir build
         mv data.json build
+      env:
+        REPOSITORIES: 'frontendbr/vagas,backend-br/vagas'
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_PAGES_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.FAKEAPI_PAGES_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
