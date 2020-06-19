@@ -1,5 +1,5 @@
 {
-  "name": "fakeapi-jobs",
+  "name": "static-jobs-api",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlsonsantana/fakeapi-jobs.git"
+    "url": "git+https://github.com/carlsonsantana/static-jobs-api.git"
   },
   "author": "Carlson Santana Cruz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carlsonsantana/fakeapi-jobs/issues"
+    "url": "https://github.com/carlsonsantana/static-jobs-api/issues"
   },
-  "homepage": "https://github.com/carlsonsantana/fakeapi-jobs#readme",
+  "homepage": "https://github.com/carlsonsantana/static-jobs-api#readme",
   "dependencies": {
     "jobs-promise": "git://github.com/carlsonsantana/jobs-promise.git#develop"
   },
