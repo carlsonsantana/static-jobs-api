@@ -1,1 +1,1 @@
-# fakeapi-jobs
+# Static Jobs API
