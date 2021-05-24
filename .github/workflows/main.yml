@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Build
       run: |
@@ -21,8 +21,10 @@ jobs:
         REPOSITORIES: 'frontendbr/vagas,backend-br/vagas'
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      if: success()
+      uses: crazy-max/ghaction-github-pages@@v2.4.1
       with:
+        target_branch: gh-pages
+        build_dir: build
+      env:
         GITHUB_TOKEN: ${{ secrets.FAKEAPI_PAGES_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
